@@ -120,7 +120,7 @@ public class ReadExcelUtils {
                                 } else {
                                     contentModle.setRowNum(rowNumOfSheet + 1);
                                     contentModle.setCellNumOfRow(cellNumOfRow + 1);
-                                    contentModle.setContent(null);
+                                    contentModle.setContent("");
                                 }
                                 //单元格
                                 row.add(contentModle.getContent());
@@ -196,7 +196,7 @@ public class ReadExcelUtils {
                                 } else {
                                     contentModle.setRowNum(rowNumOfSheet + 1);
                                     contentModle.setCellNumOfRow(cellNumOfRow + 1);
-                                    contentModle.setContent(null);
+                                    contentModle.setContent("");
                                 }
                                 //单元格
                                 row.add(contentModle.getContent());
@@ -225,7 +225,7 @@ public class ReadExcelUtils {
         private static String convert(Cell cell) {
             SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-            String cellValue = null;
+            String cellValue = "";
             if (cell == null) {
                 return cellValue;
             }
@@ -261,10 +261,10 @@ public class ReadExcelUtils {
                 //错误
                 case Cell.CELL_TYPE_ERROR:
 //                cellValue = String.valueOf(cell.getErrorCellValue());
-                    cellValue = null;
+                    cellValue = "";
                     break;
                 default:
-                    cellValue = null;
+                    cellValue = "";
 
             }
             return cellValue;

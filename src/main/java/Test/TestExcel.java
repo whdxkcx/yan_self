@@ -15,9 +15,7 @@ public class TestExcel {
 
     public static void main(String[] args){
 
-        String filePath="E:\\实验室学习资料\\资料\\移动项目\\录入表格.xlsx";
-        EntryFileController efc=new EntryFileController();
-        efc.fileUpload(filePath);
+
 
     }
 }
