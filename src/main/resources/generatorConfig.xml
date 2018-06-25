@@ -61,20 +61,20 @@
 			<property name="forceBigDecimals" value="false" />
 		</javaTypeResolver>
 
-		<javaModelGenerator targetPackage="com.yan.packageAmountCalculate.model" targetProject="${mbg.path}/java">
+		<javaModelGenerator targetPackage="com.yan.performanceAmountQuery.model" targetProject="${mbg.path}/java">
 			<property name="enableSubPackages" value="false" />
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 
-		<sqlMapGenerator targetPackage="mybatis.packageAmountCalculate" targetProject="${mbg.path}/resources">
+		<sqlMapGenerator targetPackage="mybatis.performanceAmountQuery" targetProject="${mbg.path}/resources">
 			<property name="enableSubPackages" value="false" />
 		</sqlMapGenerator>
 
-		<javaClientGenerator targetPackage="com.yan.packageAmountCalculate.mapper" targetProject="${mbg.path}/java" type="XMLMAPPER">
+		<javaClientGenerator targetPackage="com.yan.performanceAmountQuery.mapper" targetProject="${mbg.path}/java" type="XMLMAPPER">
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
 
-		<table schema="" tableName="performance" />
+		<table schema="" tableName="performanceAmount" />
 
 	</context>
 </generatorConfiguration>

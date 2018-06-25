@@ -65,7 +65,7 @@
 		</menuItem>
 		<menuItem>
 			<name>查询金额</name>
-			<url>/package/fileUploadIndex</url>
+			<url>/packageQuery/amountQuery</url>
 		</menuItem>
 	</menu>
 

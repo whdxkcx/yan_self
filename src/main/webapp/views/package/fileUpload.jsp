@@ -20,19 +20,19 @@
     <div id="main">
         <div id="toolbar">
             <a class="waves-effect btn btn-info btn-sm" href="javascript:actionType('add');"><i class="zmdi zmdi-plus"></i>
-                导入标准模板</a>
+                导入excel文件</a>
         </div>
         <table id="table"></table>
     </div>
 
 
       <!-- 导入模板 -->
-      <div id="addDialog" class="modal fade" aria-hidden="true">
+      <div id="addDialog" class="modal fade" aria-hidden="false">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"
-                            aria-hidden="true">&times;
+                            aria-hidden="false">&times;
                     </button>
                     <h3 class="modal-title" id="myModalLabel">导入标准模板</h3>
                 </div>
@@ -156,7 +156,6 @@
             $('#typeAction').val(type);
             $('#addDialog').modal('show');
     }
-
 
 
 </script>
